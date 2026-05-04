@@ -56,8 +56,6 @@ export default function LandingPage() {
         { imageSrc: "http://img.b2bpic.net/free-photo/mechanics-repairing-car-workshop_329181-11837.jpg", imageAlt: "Appliance service" },
       ]}
       mediaAnimation="slide-up"
-      rating={5}
-      ratingText="Expertly Rated"
     />
   </div>
 
