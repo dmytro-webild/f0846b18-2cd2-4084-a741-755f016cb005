@@ -2,7 +2,7 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
-import ContactCenter from '@/components/sections/contact/ContactCenter';
+import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FeatureCardThree from '@/components/sections/feature/featureCardThree/FeatureCardThree';
 import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
 import HeroBillboardGallery from '@/components/sections/hero/HeroBillboardGallery';
@@ -10,7 +10,7 @@ import MetricCardSeven from '@/components/sections/metrics/MetricCardSeven';
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
 import TestimonialAboutCard from '@/components/sections/about/TestimonialAboutCard';
 import FeatureCardEight from '@/components/sections/feature/FeatureCardEight';
-import { Shield, Zap } from "lucide-react";
+import { Shield, Zap, Phone, Mail, MapPin } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -119,13 +119,16 @@ export default function LandingPage() {
   </div>
 
   <div id="contact" data-section="contact">
-      <ContactCenter
-      useInvertedBackground={false}
+      <ContactSplit
+      useInvertedBackground={true}
       background={{ variant: "plain" }}
-      title="Ready to Work Together?"
-      description="Contact us today for a professional quote on your next project."
-      buttonText="Request a Quote"
-      tag="Let's Talk"
+      title="Direct Support & Bookings"
+      description="Get in touch with our team for urgent service or a custom project quote. We are available across the Lower Mainland."
+      tag="Contact Us"
+      tagIcon={Phone}
+      imageSrc="http://img.b2bpic.net/free-photo/plumbing-professional-doing-his-job_23-2150721526.jpg?_wi=1"
+      className="bg-accent"
+      mediaPosition="left"
     />
   </div>
 
