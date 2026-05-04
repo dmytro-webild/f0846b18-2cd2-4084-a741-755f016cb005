@@ -51,7 +51,7 @@ export default function LandingPage() {
         { text: "Request a Quote", href: "#contact" },
       ]}
       mediaItems={[
-        { imageSrc: "http://img.b2bpic.net/free-photo/plumbing-professional-doing-his-job_23-2150721526.jpg", imageAlt: "Plumbing professional" },
+        { imageSrc: "http://img.b2bpic.net/free-photo/plumbing-professional-doing-his-job_23-2150721526.jpg?_wi=1", imageAlt: "Plumbing professional" },
         { imageSrc: "http://img.b2bpic.net/free-photo/man-looks-faucet-pipes-valve-pressure-meter_169016-14812.jpg", imageAlt: "Pipe repair" },
         { imageSrc: "http://img.b2bpic.net/free-photo/mechanics-repairing-car-workshop_329181-11837.jpg", imageAlt: "Appliance service" },
       ]}
@@ -67,7 +67,7 @@ export default function LandingPage() {
       description="At Simon Appliance and Plumbing, we believe that 'good enough' isn't enough. We treat your home as if it were our own—with precision, care, and zero compromise."
       subdescription="Our Red Seal certifications in Plumbing and Gas are a guarantee of high-level craftsmanship, safety, and unwavering technical integrity."
       icon={Shield}
-      imageSrc="http://img.b2bpic.net/free-photo/plumbing-professional-doing-his-job_23-2150721566.jpg"
+      imageSrc="http://img.b2bpic.net/free-photo/plumbing-professional-doing-his-job_23-2150721566.jpg?_wi=1"
       mediaAnimation="slide-up"
     />
   </div>
@@ -97,8 +97,8 @@ export default function LandingPage() {
         textboxLayout="split"
         useInvertedBackground={true}
         features={[
-            { title: "System Inspection", description: "Detailed assessment of existing lines to identify failure points.", imageSrc: "http://img.b2bpic.net/free-photo/plumbing-professional-doing-his-job_23-2150721566.jpg" },
-            { title: "Precision PEX Installation", description: "Safe, code-compliant PEX installation ensuring zero leaks and superior water flow.", imageSrc: "http://img.b2bpic.net/free-photo/plumbing-professional-doing-his-job_23-2150721526.jpg" },
+            { title: "System Inspection", description: "Detailed assessment of existing lines to identify failure points.", imageSrc: "http://img.b2bpic.net/free-photo/plumbing-professional-doing-his-job_23-2150721566.jpg?_wi=2" },
+            { title: "Precision PEX Installation", description: "Safe, code-compliant PEX installation ensuring zero leaks and superior water flow.", imageSrc: "http://img.b2bpic.net/free-photo/plumbing-professional-doing-his-job_23-2150721526.jpg?_wi=2" },
         ]}
       />
   </div>
