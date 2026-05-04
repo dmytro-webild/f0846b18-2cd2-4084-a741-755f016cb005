@@ -55,9 +55,9 @@ export default function LandingPage() {
       description="Licensed Red Seal experts serving Metro Vancouver to Vancouver Island. We deliver flawless technical solutions with a commitment to protecting your home and your peace of mind."
       buttons={[
         {
-          text: "Request a Quote",          href: "#contact"},
+          text: "Emergency Service",          href: "tel:+17783177711"},
         {
-          text: "Call +1 778-317-7711",          href: "tel:+17783177711"},
+          text: "Request a Quote",          href: "#contact"},
       ]}
       mediaItems={[
         { imageSrc: "http://img.b2bpic.net/free-photo/plumbing-professional-doing-his-job_23-2150721526.jpg", imageAlt: "Plumbing professional" },
