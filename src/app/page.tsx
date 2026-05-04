@@ -3,15 +3,12 @@
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import ContactCenter from '@/components/sections/contact/ContactCenter';
-import FaqSplitText from '@/components/sections/faq/FaqSplitText';
 import FeatureCardThree from '@/components/sections/feature/featureCardThree/FeatureCardThree';
 import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
 import HeroBillboardGallery from '@/components/sections/hero/HeroBillboardGallery';
 import MetricCardSeven from '@/components/sections/metrics/MetricCardSeven';
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
-import ProductCardOne from '@/components/sections/product/ProductCardOne';
 import TestimonialAboutCard from '@/components/sections/about/TestimonialAboutCard';
-import TestimonialCardOne from '@/components/sections/testimonial/TestimonialCardOne';
 import FeatureCardEight from '@/components/sections/feature/FeatureCardEight';
 import { Shield, Zap } from "lucide-react";
 
@@ -59,6 +56,8 @@ export default function LandingPage() {
         { imageSrc: "http://img.b2bpic.net/free-photo/mechanics-repairing-car-workshop_329181-11837.jpg", imageAlt: "Appliance service" },
       ]}
       mediaAnimation="slide-up"
+      rating={5}
+      ratingText="Expertly Rated"
     />
   </div>
 
@@ -103,7 +102,6 @@ export default function LandingPage() {
             { title: "System Inspection", description: "Detailed assessment of existing lines to identify failure points.", imageSrc: "http://img.b2bpic.net/free-photo/plumbing-professional-doing-his-job_23-2150721566.jpg" },
             { title: "Precision PEX Installation", description: "Safe, code-compliant PEX installation ensuring zero leaks and superior water flow.", imageSrc: "http://img.b2bpic.net/free-photo/plumbing-professional-doing-his-job_23-2150721526.jpg" },
         ]}
-        animationType="blur-reveal"
       />
   </div>
 
