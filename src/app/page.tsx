@@ -8,10 +8,10 @@ import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloating
 import TestimonialAboutCard from '@/components/sections/about/TestimonialAboutCard';
 import FeatureCardThree from '@/components/sections/feature/featureCardThree/FeatureCardThree';
 import FeatureCardEight from '@/components/sections/feature/FeatureCardEight';
-import FeatureCardTwentySeven from '@/components/sections/feature/FeatureCardTwentySeven';
+import CardStack from '@/components/cardStack/CardStack';
 import MetricCardSeven from '@/components/sections/metrics/MetricCardSeven';
 import ContactCTA from '@/components/sections/contact/ContactCTA';
-import { Shield, Zap, Wrench, MapPin } from "lucide-react";
+import { Shield, Zap, Wrench, MapPin, Mail, Navigation } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -83,7 +83,7 @@ export default function LandingPage() {
       gridVariant="three-columns-all-equal-width"
       useInvertedBackground={false}
       features={[
-        { title: "Plumbing & Heating", description: "Complete home piping, boiler service, water heaters, and hydronic heating systems.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DFNQcAL7fna2gB5gMFYdjyolng/uploaded-1777946998738-5df8w8ug.png?_wi=1" },
+        { title: "Plumbing & Heating", description: "Complete home piping, boiler service, water heaters, and hydronic heating systems.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DFNQcAL7fna2gB5gMFYdjyolng/uploaded-1777946998738-5df8w8ug.png" },
         { title: "Appliance Installation", description: "Specialized support for Bosch, Miele, LG, Samsung, and Sub-Zero kitchen and laundry appliances.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DFNQcAL7fna2gB5gMFYdjyolng/uploaded-1777947144208-logmxtv7.png?_wi=1" },
         { title: "Emergency & Drain Service", description: "24/7 reliable response for burst pipes, sewer backups, and urgent leaks. Minimal disruption to your home.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DFNQcAL7fna2gB5gMFYdjyolng/uploaded-1777947144208-logmxtv7.png?_wi=2" },
       ]}
@@ -110,21 +110,29 @@ export default function LandingPage() {
   </div>
 
   <div id="area" data-section="area">
-      <FeatureCardTwentySeven
-        animationType="slide-up"
-        textboxLayout="split"
+      <CardStack
         title="Our Service Areas"
-        description="We provide rapid, reliable coverage across key regions, with dedicated specialists in every service zone."
+        description="Dedicated coverage across the region."
         tag="Coverage"
         tagIcon={MapPin}
-        features={[
-          { id: "1", title: "Metro Vancouver", descriptions: ["Full Lower Mainland coverage with 24/7 emergency response availability."], imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DFNQcAL7fna2gB5gMFYdjyolng/uploaded-1777946998738-5df8w8ug.png?_wi=2" },
-          { id: "2", title: "Fraser Valley", descriptions: ["Reliable plumbing and heating services from Langley to Chilliwack."], imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DFNQcAL7fna2gB5gMFYdjyolng/uploaded-1777947144208-logmxtv7.png?_wi=1" },
-          { id: "3", title: "Vancouver Island", descriptions: ["Premium technical service for Nanaimo, Victoria, and adjacent island regions."], imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DFNQcAL7fna2gB5gMFYdjyolng/uploaded-1777947144208-logmxtv7.png?_wi=2" }
-        ]}
-        useInvertedBackground={false}
+        textboxLayout="split"
+        gridVariant="three-columns-all-equal-width"
+        animationType="blur-reveal"
         className="bg-slate-50"
-      />
+      >
+        <div className="p-6 rounded-xl border bg-white">
+            <h3 className="text-xl font-bold mb-2">Metro Vancouver</h3>
+            <p className="text-sm opacity-80">Serving the entire Lower Mainland with rapid response.</p>
+        </div>
+        <div className="p-6 rounded-xl border bg-white">
+            <h3 className="text-xl font-bold mb-2">Fraser Valley</h3>
+            <p className="text-sm opacity-80">Providing expert support to Chilliwack and surrounding areas.</p>
+        </div>
+        <div className="p-6 rounded-xl border bg-white">
+            <h3 className="text-xl font-bold mb-2">Vancouver Island</h3>
+            <p className="text-sm opacity-80">Comprehensive plumbing service in Nanaimo and Victoria.</p>
+        </div>
+      </CardStack>
   </div>
 
   <div id="trust" data-section="trust">
