@@ -40,6 +40,7 @@ export default function LandingPage() {
       ]}
       brandName="Simon Plumbing"
       logoClassName="w-48 h-auto scale-150"
+      button={{ text: "Get Quote", href: "#contact" }}
     />
   </div>
 
