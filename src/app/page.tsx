@@ -10,7 +10,7 @@ import MetricCardSeven from '@/components/sections/metrics/MetricCardSeven';
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
 import TestimonialAboutCard from '@/components/sections/about/TestimonialAboutCard';
 import FeatureCardEight from '@/components/sections/feature/FeatureCardEight';
-import { Shield, Zap, Phone, Mail, MapPin } from "lucide-react";
+import { Shield, Zap, Phone, CheckCircle } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -80,11 +80,13 @@ export default function LandingPage() {
       useInvertedBackground={false}
       features={[
         { title: "Expert Plumbing Systems", description: "Comprehensive diagnostics, repairs, and installations for all residential and commercial piping systems.", imageSrc: "http://img.b2bpic.net/free-photo/technician-checking-heating-system-boiler-room_169016-53973.jpg" },
+        { title: "Professional Appliance Installation", description: "Certified, high-quality installation for modern residential appliances, emphasizing our unique Installation Advantage.", imageSrc: "http://img.b2bpic.net/free-photo/plumbing-professional-doing-his-job_23-2150721526.jpg?_wi=1" },
         { title: "Certified Gas Solutions", description: "High-precision gas line fitting and appliance connections performed by Red Seal certified gas technicians.", imageSrc: "http://img.b2bpic.net/free-photo/front-view-worker-with-protective-mask-gloves_23-2148773449.jpg" },
-        { title: "Preventative Maintenance", description: "Proactive identifying of potential system vulnerabilities before they escalate into costly and disruptive repairs.", imageSrc: "http://img.b2bpic.net/free-photo/full-shot-man-working-as-plumber_23-2150746299.jpg" },
       ]}
       title="Specialized Services"
-      description="We offer high-precision technical services for both residential and commercial needs."
+      description="We offer high-precision technical services, now including professional appliance installation to ensure your home runs perfectly."
+      tag="Installation Advantage"
+      tagIcon={CheckCircle}
     />
   </div>
 
@@ -137,7 +139,7 @@ export default function LandingPage() {
       logoText="Simon Appliance and Plumbing Ltd."
       columns={[
         { title: "Contact", items: [{ label: "+1 778-317-7711", href: "tel:+17783177711" }, { label: "Email Office", href: "mailto:info@simonplumbing.ca" }] },
-        { title: "Services", items: [{ label: "Plumbing", href: "#services" }, { label: "Gas Fitting", href: "#services" }] },
+        { title: "Services", items: [{ label: "Plumbing", href: "#services" }, { label: "Gas Fitting", href: "#services" }, { label: "Appliance Installation", href: "#services" }] },
         { title: "Policy", items: [{ label: "Privacy Policy", href: "#" }, { label: "Terms of Service", href: "#" }] },
       ]}
       copyrightText="© 2024 Simon Appliance and Plumbing Ltd. All rights reserved."
