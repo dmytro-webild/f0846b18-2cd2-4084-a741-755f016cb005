@@ -142,26 +142,21 @@ export default function LandingPage() {
     />
   </div>
 
-  <div id="contact" data-section="contact" className="bg-white py-24">
-    <div className="max-w-4xl mx-auto px-6 text-center">
-      <div className="flex flex-col md:flex-row justify-center items-center gap-16">
-        <div className="flex flex-col items-center gap-4">
-          <div className="p-4 bg-gray-50 rounded-full text-blue-900">
-            <Phone className="w-10 h-10" />
-          </div>
-          <h3 className="text-4xl font-bold text-blue-950 tracking-tight">+1 778-317-7711</h3>
-          <p className="text-sm font-semibold tracking-widest text-gray-500 uppercase">OFFICE & EMERGENCY LINE</p>
+  <div id="contact" data-section="contact" className="bg-white py-24 px-6">
+    <div className="max-w-4xl mx-auto text-center">
+      <h2 className="text-4xl font-light text-black mb-16">Contact Us</h2>
+      <div className="grid md:grid-cols-2 gap-12">
+        <div className="flex flex-col items-center gap-4 p-8">
+          <h4 className="text-sm text-gray-400 uppercase tracking-widest">Office & Emergency Line</h4>
+          <p className="text-2xl font-medium text-black">+1 778-317-7711</p>
         </div>
-        <div className="flex flex-col items-center gap-4">
-          <div className="p-4 bg-gray-50 rounded-full text-blue-900">
-            <Mail className="w-10 h-10" />
-          </div>
-          <h3 className="text-4xl font-bold text-blue-950 tracking-tight">778simonteam@gmail.com</h3>
-          <p className="text-sm font-semibold tracking-widest text-gray-500 uppercase">QUOTE & GENERAL INQUIRIES</p>
+        <div className="flex flex-col items-center gap-4 p-8">
+          <h4 className="text-sm text-gray-400 uppercase tracking-widest">Quote & General Inquiries</h4>
+          <p className="text-2xl font-medium text-black">778simonteam@gmail.com</p>
         </div>
       </div>
-      <div className="mt-20 pt-10 border-t border-gray-100 opacity-60">
-          <p className="text-xs text-gray-400">Red Seal Plumbing & Gas Fitting Professionals</p>
+      <div className="mt-20 pt-8 border-t border-gray-100">
+          <p className="text-xs text-gray-300 uppercase tracking-wider font-semibold">Red Seal Plumbing & Gas Fitting Professionals</p>
       </div>
     </div>
   </div>
