@@ -10,6 +10,7 @@ import FeatureCardThree from '@/components/sections/feature/featureCardThree/Fea
 import FeatureCardEight from '@/components/sections/feature/FeatureCardEight';
 import FeatureBento from '@/components/sections/feature/FeatureBento';
 import MetricCardSeven from '@/components/sections/metrics/MetricCardSeven';
+import ContactCTA from '@/components/sections/contact/ContactCTA';
 import { Shield, Zap, Phone, Wrench, MapPin, Mail } from "lucide-react";
 
 export default function LandingPage() {
@@ -142,28 +143,19 @@ export default function LandingPage() {
     />
   </div>
 
-  <div id="contact" data-section="contact" className="bg-white py-24">
-    <div className="max-w-4xl mx-auto px-6 text-center">
-      <div className="flex flex-col md:flex-row justify-center items-center gap-16">
-        <div className="flex flex-col items-center gap-6">
-          <div className="p-6 bg-gray-50 rounded-2xl text-blue-900 border border-gray-100">
-            <Phone className="w-12 h-12" />
-          </div>
-          <h3 className="text-5xl font-extrabold text-blue-950 tracking-tighter">+1 778-317-7711</h3>
-          <p className="text-sm font-bold tracking-[0.2em] text-gray-500 uppercase">OFFICE & EMERGENCY LINE</p>
-        </div>
-        <div className="flex flex-col items-center gap-6">
-          <div className="p-6 bg-gray-50 rounded-2xl text-blue-900 border border-gray-100">
-            <Mail className="w-12 h-12" />
-          </div>
-          <h3 className="text-5xl font-extrabold text-blue-950 tracking-tighter">778simonteam@gmail.com</h3>
-          <p className="text-sm font-bold tracking-[0.2em] text-gray-500 uppercase">QUOTE & GENERAL INQUIRIES</p>
-        </div>
-      </div>
-      <div className="mt-24 pt-12 border-t border-gray-100 flex flex-col items-center">
-          <p className="text-sm font-medium text-gray-400 tracking-widest uppercase">Red Seal Plumbing & Gas Fitting Professionals</p>
-      </div>
-    </div>
+  <div id="contact" data-section="contact">
+      <ContactCTA
+        tag="Contact Us"
+        title="Get in Touch"
+        description="Call or email us for emergency services or to schedule your project estimate."
+        buttons={[
+            { text: "Call +1 778-317-7711", href: "tel:+17783177711" },
+            { text: "Email for Quote", href: "mailto:778simonteam@gmail.com" }
+        ]}
+        background={{ variant: "plain" }}
+        useInvertedBackground={false}
+        className="bg-white"
+      />
   </div>
 
   <div id="footer" data-section="footer">
