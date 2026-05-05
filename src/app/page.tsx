@@ -10,7 +10,7 @@ import MetricCardSeven from '@/components/sections/metrics/MetricCardSeven';
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
 import TestimonialAboutCard from '@/components/sections/about/TestimonialAboutCard';
 import FeatureCardEight from '@/components/sections/feature/FeatureCardEight';
-import { Shield, Zap, Phone, CheckCircle, MapPin } from "lucide-react";
+import { Shield, Zap, Phone, CheckCircle, MapPin, Wrench, Flame, Sparkles } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -63,10 +63,10 @@ export default function LandingPage() {
   <div id="about" data-section="about">
       <TestimonialAboutCard
       useInvertedBackground={false}
-      tag="Our Philosophy"
-      title="Excellence in Every Detail"
-      description="At Simon Appliance and Plumbing, we believe that 'good enough' isn't enough. We treat your home as if it were our own—with precision, care, and zero compromise."
-      subdescription="Our Red Seal certifications in Plumbing and Gas are a guarantee of high-level craftsmanship, safety, and unwavering technical integrity."
+      tag="Our Experience"
+      title="25 Years of Red Seal Excellence"
+      description="With a quarter-century of dedicated field experience, Simon Appliance and Plumbing has built a reputation for reliable, high-precision technical service. We specialize in comprehensive plumbing, heating, and renovation plumbing solutions."
+      subdescription="Our team maintains Red Seal certifications in both plumbing and gas fitting, ensuring that every project is completed to the highest Canadian safety and efficiency standards."
       icon={Shield}
       imageSrc="http://img.b2bpic.net/free-photo/plumbing-professional-doing-his-job_23-2150721566.jpg?_wi=1"
       mediaAnimation="slide-up"
@@ -80,14 +80,14 @@ export default function LandingPage() {
       gridVariant="three-columns-all-equal-width"
       useInvertedBackground={false}
       features={[
-        { title: "Expert Plumbing Systems", description: "Comprehensive diagnostics, repairs, and installations for all residential and commercial piping systems.", imageSrc: "http://img.b2bpic.net/free-photo/technician-checking-heating-system-boiler-room_169016-53973.jpg" },
-        { title: "Professional Appliance Installation", description: "Certified, high-quality installation for modern residential appliances, emphasizing our unique Installation Advantage.", imageSrc: "http://img.b2bpic.net/free-photo/plumbing-professional-doing-his-job_23-2150721526.jpg?_wi=1" },
-        { title: "Certified Gas Solutions", description: "High-precision gas line fitting and appliance connections performed by Red Seal certified gas technicians.", imageSrc: "http://img.b2bpic.net/free-photo/front-view-worker-with-protective-mask-gloves_23-2148773449.jpg" },
+        { title: "Plumbing & Heating", description: "Complete home piping, boiler service, water heaters, and hydronic heating systems.", imageSrc: "http://img.b2bpic.net/free-photo/technician-checking-heating-system-boiler-room_169016-53973.jpg" },
+        { title: "Appliance Installation", description: "Specialized support for Bosch, Miele, LG, Samsung, and Sub-Zero kitchen and laundry appliances.", imageSrc: "http://img.b2bpic.net/free-photo/kitchen-appliance-installation-worker_23-2148773449.jpg" },
+        { title: "Renovation Plumbing", description: "Full plumbing rough-ins for bathroom remodels, kitchen renovations, and custom home builds.", imageSrc: "http://img.b2bpic.net/free-photo/renovation-plumbing-work_23-2149023455.jpg" },
       ]}
-      title="Specialized Services"
-      description="We offer high-precision technical services, now including professional appliance installation to ensure your home runs perfectly."
-      tag="Installation Advantage"
-      tagIcon={CheckCircle}
+      title="Our Core Services"
+      description="From expert appliance integrations to complex home renovations, we provide comprehensive technical services tailored to your project."
+      tag="Professional Installation & Repair"
+      tagIcon={Wrench}
     />
   </div>
 
