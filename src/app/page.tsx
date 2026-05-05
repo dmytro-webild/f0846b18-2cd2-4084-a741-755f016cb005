@@ -2,15 +2,14 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
-import ContactSplit from '@/components/sections/contact/ContactSplit';
-import FeatureCardThree from '@/components/sections/feature/featureCardThree/FeatureCardThree';
-import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
 import HeroSplit from '@/components/sections/hero/HeroSplit';
-import MetricCardSeven from '@/components/sections/metrics/MetricCardSeven';
+import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
 import TestimonialAboutCard from '@/components/sections/about/TestimonialAboutCard';
+import FeatureCardThree from '@/components/sections/feature/featureCardThree/FeatureCardThree';
 import FeatureCardEight from '@/components/sections/feature/FeatureCardEight';
 import FeatureBento from '@/components/sections/feature/FeatureBento';
+import MetricCardSeven from '@/components/sections/metrics/MetricCardSeven';
 import { Shield, Zap, Phone, Wrench, MapPin, Mail } from "lucide-react";
 
 export default function LandingPage() {
@@ -162,7 +161,7 @@ export default function LandingPage() {
         </div>
       </div>
       <div className="mt-20 pt-10 border-t border-gray-100 opacity-60">
-          <p className="text-xs text-gray-400">Proudly Certified Red Seal Plumbing & Gas Fitting Professionals</p>
+          <p className="text-xs text-gray-400">Red Seal Plumbing & Gas Fitting Professionals</p>
       </div>
     </div>
   </div>
