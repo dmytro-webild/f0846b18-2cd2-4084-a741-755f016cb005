@@ -151,6 +151,7 @@ export default function LandingPage() {
       description="Get in touch with our team for urgent service or a custom project quote. We are available across the Lower Mainland."
       tag="Contact Us"
       tagIcon={Phone}
+      inputPlaceholder="Enter your email for a free quote"
       imageSrc="http://img.b2bpic.net/free-photo/plumbing-professional-doing-his-job_23-2150721526.jpg?_wi=1"
       className="bg-accent"
       mediaPosition="left"
