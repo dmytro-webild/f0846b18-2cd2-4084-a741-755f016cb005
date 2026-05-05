@@ -84,7 +84,7 @@ export default function LandingPage() {
       useInvertedBackground={false}
       features={[
         { title: "Plumbing & Heating", description: "Complete home piping, boiler service, water heaters, and hydronic heating systems.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DFNQcAL7fna2gB5gMFYdjyolng/uploaded-1777946998738-5df8w8ug.png" },
-        { title: "Appliance Installation", description: "Specialized support for Bosch, Miele, LG, Samsung, and Sub-Zero kitchen and laundry appliances.", imageSrc: "http://img.b2bpic.net/free-photo/kitchen-appliance-installation-worker_23-2148773449.jpg" },
+        { title: "Appliance Installation", description: "Specialized support for Bosch, Miele, LG, Samsung, and Sub-Zero kitchen and laundry appliances.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DFNQcAL7fna2gB5gMFYdjyolng/uploaded-1777947144208-logmxtv7.png" },
         { title: "Renovation Plumbing", description: "Full plumbing rough-ins for bathroom remodels, kitchen renovations, and custom home builds.", imageSrc: "http://img.b2bpic.net/free-photo/renovation-plumbing-work_23-2149023455.jpg" },
       ]}
       title="Our Core Services"
