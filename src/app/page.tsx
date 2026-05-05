@@ -11,7 +11,7 @@ import FeatureCardEight from '@/components/sections/feature/FeatureCardEight';
 import FeatureCardTwentySeven from '@/components/sections/feature/FeatureCardTwentySeven';
 import MetricCardSeven from '@/components/sections/metrics/MetricCardSeven';
 import ContactCTA from '@/components/sections/contact/ContactCTA';
-import { Shield, Zap, Wrench, MapPin, Mail, Navigation } from "lucide-react";
+import { Shield, Zap, Wrench, MapPin } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -122,6 +122,7 @@ export default function LandingPage() {
           { id: "2", title: "Fraser Valley", descriptions: ["Reliable plumbing and heating services from Langley to Chilliwack."], imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DFNQcAL7fna2gB5gMFYdjyolng/uploaded-1777947144208-logmxtv7.png?_wi=1" },
           { id: "3", title: "Vancouver Island", descriptions: ["Premium technical service for Nanaimo, Victoria, and adjacent island regions."], imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DFNQcAL7fna2gB5gMFYdjyolng/uploaded-1777947144208-logmxtv7.png?_wi=2" }
         ]}
+        useInvertedBackground={false}
         className="bg-slate-50"
       />
   </div>
