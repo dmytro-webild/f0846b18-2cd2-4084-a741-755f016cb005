@@ -2,7 +2,7 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
-import HeroSplit from '@/components/sections/hero/HeroSplit';
+import HeroOverlay from '@/components/sections/hero/HeroOverlay';
 import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
 import TestimonialAboutCard from '@/components/sections/about/TestimonialAboutCard';
@@ -11,7 +11,7 @@ import FeatureCardEight from '@/components/sections/feature/FeatureCardEight';
 import CardStack from '@/components/cardStack/CardStack';
 import MetricCardSeven from '@/components/sections/metrics/MetricCardSeven';
 import ContactCTA from '@/components/sections/contact/ContactCTA';
-import { Shield, Zap, Wrench, MapPin, Mail, Navigation } from "lucide-react";
+import { Shield, Zap, Wrench, MapPin } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -46,8 +46,7 @@ export default function LandingPage() {
   </div>
 
   <div id="hero" data-section="hero">
-      <HeroSplit
-      background={{ variant: "gradient-bars" }}
+      <HeroOverlay
       title="Precision Plumbing. Professional Integrity."
       description="Licensed Red Seal experts serving Metro Vancouver to Vancouver Island. We deliver flawless technical solutions with a commitment to protecting your home and your peace of mind."
       buttons={[
@@ -56,10 +55,6 @@ export default function LandingPage() {
       ]}
       imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DFNQcAL7fna2gB5gMFYdjyolng/uploaded-1777945844879-cwk0mgla.png"
       imageAlt="Plumbing professional"
-      mediaAnimation="slide-up"
-      imagePosition="right"
-      mediaWrapperClassName="flex-1 w-full max-w-3xl"
-      fixedMediaHeight={false}
     />
   </div>
 
