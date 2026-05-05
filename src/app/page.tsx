@@ -10,7 +10,7 @@ import MetricCardSeven from '@/components/sections/metrics/MetricCardSeven';
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
 import TestimonialAboutCard from '@/components/sections/about/TestimonialAboutCard';
 import FeatureCardEight from '@/components/sections/feature/FeatureCardEight';
-import { Shield, Zap, Phone, CheckCircle } from "lucide-react";
+import { Shield, Zap, Phone, CheckCircle, MapPin } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -34,6 +34,7 @@ export default function LandingPage() {
         { name: "About", id: "about" },
         { name: "Services", id: "services" },
         { name: "Poly-B Replacement", id: "poly-b" },
+        { name: "Service Area", id: "area" },
         { name: "Trust", id: "trust" },
         { name: "Contact", id: "contact" },
       ]}
@@ -101,6 +102,23 @@ export default function LandingPage() {
         features={[
             { title: "System Inspection", description: "Detailed assessment of existing lines to identify failure points.", imageSrc: "http://img.b2bpic.net/free-photo/plumbing-professional-doing-his-job_23-2150721566.jpg?_wi=2" },
             { title: "Precision PEX Installation", description: "Safe, code-compliant PEX installation ensuring zero leaks and superior water flow.", imageSrc: "http://img.b2bpic.net/free-photo/plumbing-professional-doing-his-job_23-2150721526.jpg?_wi=2" },
+        ]}
+      />
+  </div>
+
+  <div id="area" data-section="area">
+      <FeatureCardEight 
+        title="Regional Coverage"
+        description="We provide professional, high-standard plumbing and gas services throughout the Pacific Northwest. Our team is equipped to support clients across the Lower Mainland, Fraser Valley, and Vancouver Island."
+        tag="Service Map"
+        tagIcon={MapPin}
+        textboxLayout="split"
+        useInvertedBackground={false}
+        features={[
+          { title: "Metro Vancouver", description: "Full residential and commercial coverage throughout the metropolitan area." },
+          { title: "Fraser Valley", description: "Dedicated local service for Abbotsford, Chilliwack, and surrounding areas." },
+          { title: "Vancouver Island", description: "Specialized project support reaching Victoria and beyond." },
+          { title: "Corridor Coverage", description: "Seamless service routes from Whistler to the southern interior borders." }
         ]}
       />
   </div>
