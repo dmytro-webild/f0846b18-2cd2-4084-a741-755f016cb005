@@ -111,17 +111,20 @@ export default function LandingPage() {
 
   <div id="area" data-section="area">
       <FeatureBento 
-        title="Service Coverage Map"
-        description="We proudly serve the heart of British Columbia with dedicated plumbing and gas expertise. Our service boundary encompasses the Lower Mainland, Fraser Valley, and Vancouver Island with localized teams in Whistler, Metro Vancouver, Chilliwack, Nanaimo, and Victoria."
-        tag="Coverage Area"
+        title="Regional Coverage"
+        description="We proudly provide professional plumbing and gas services throughout British Columbia, covering the Lower Mainland, Fraser Valley, and Vancouver Island regions."
+        tag="Service Map"
         tagIcon={MapPin}
         textboxLayout="split"
         useInvertedBackground={false}
         animationType="blur-reveal"
+        className="bg-white"
+        containerClassName="max-w-7xl mx-auto px-6 py-20"
+        cardClassName="shadow-none border-none bg-white p-0"
         features={[
           { 
-            title: "Service Region: BC", 
-            description: "Minimalist map highlighting our service territory across Whistler, Metro Vancouver, Chilliwack, Nanaimo, and Victoria with defined boundary lines for operational clarity.", 
+            title: "Service Territory", 
+            description: "BC Core Service Network: Serving Whistler, Metro Vancouver, Chilliwack, Nanaimo, and Victoria.", 
             bentoComponent: 'map'
           }
         ]}
