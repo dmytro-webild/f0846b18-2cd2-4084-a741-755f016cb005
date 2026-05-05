@@ -10,7 +10,8 @@ import MetricCardSeven from '@/components/sections/metrics/MetricCardSeven';
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
 import TestimonialAboutCard from '@/components/sections/about/TestimonialAboutCard';
 import FeatureCardEight from '@/components/sections/feature/FeatureCardEight';
-import { Shield, Zap, Phone, Wrench, MapPin } from "lucide-react";
+import FeatureBento from '@/components/sections/feature/FeatureBento';
+import { Shield, Zap, Phone, Wrench, MapPin, Globe } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -109,18 +110,20 @@ export default function LandingPage() {
   </div>
 
   <div id="area" data-section="area">
-      <FeatureCardEight 
+      <FeatureBento 
         title="Regional Coverage"
         description="We provide professional, high-standard plumbing and gas services throughout the Pacific Northwest. Our team is equipped to support clients across the Lower Mainland, Fraser Valley, and Vancouver Island."
         tag="Service Map"
         tagIcon={MapPin}
         textboxLayout="split"
         useInvertedBackground={false}
+        animationType="blur-reveal"
         features={[
-          { title: "Metro Vancouver", description: "Full residential and commercial coverage throughout the metropolitan area.", imageSrc: "http://img.b2bpic.net/free-photo/city-skyline-view_23-2149363529.jpg" },
-          { title: "Fraser Valley", description: "Dedicated local service for Abbotsford, Chilliwack, and surrounding areas.", imageSrc: "http://img.b2bpic.net/free-photo/field-mountains-sunset_23-2148906001.jpg" },
-          { title: "Vancouver Island", description: "Specialized project support reaching Victoria and beyond.", imageSrc: "http://img.b2bpic.net/free-photo/ocean-coast-view_23-2148974574.jpg" },
-          { title: "Corridor Coverage", description: "Seamless service routes from Whistler to the southern interior borders.", imageSrc: "http://img.b2bpic.net/free-photo/mountain-road-scenery_23-2148813735.jpg" }
+          { 
+            title: "Pacific Northwest Region", 
+            description: "Extensive service network across British Columbia's core regions, including Lower Mainland, Fraser Valley, and Vancouver Island.", 
+            bentoComponent: 'map'
+          }
         ]}
       />
   </div>
