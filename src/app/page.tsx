@@ -148,7 +148,7 @@ export default function LandingPage() {
       useInvertedBackground={true}
       background={{ variant: "plain" }}
       title="Direct Support & Bookings"
-      description="Get in touch with our team for urgent service or a custom project quote. We are available across the Lower Mainland."
+      description="Get in touch with our team for a No-Obligation quote for urgent service or a custom project. We are available across the Lower Mainland."
       tag="Contact Us"
       tagIcon={Phone}
       inputPlaceholder="Enter your email for a free quote"
