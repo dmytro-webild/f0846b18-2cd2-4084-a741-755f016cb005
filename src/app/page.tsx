@@ -11,7 +11,7 @@ import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloating
 import TestimonialAboutCard from '@/components/sections/about/TestimonialAboutCard';
 import FeatureCardEight from '@/components/sections/feature/FeatureCardEight';
 import FeatureBento from '@/components/sections/feature/FeatureBento';
-import { Shield, Zap, Phone, Wrench, MapPin, Globe } from "lucide-react";
+import { Shield, Zap, Phone, Wrench, MapPin } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -112,7 +112,7 @@ export default function LandingPage() {
   <div id="area" data-section="area">
       <FeatureBento 
         title="Regional Coverage"
-        description="We provide professional, high-standard plumbing and gas services throughout the Pacific Northwest. Our team is equipped to support clients across the Lower Mainland, Fraser Valley, and Vancouver Island."
+        description="We provide professional, high-standard plumbing and gas services throughout the Pacific Northwest. Our map highlights our key service boundaries including Vancouver, Whistler, Chilliwack, and Victoria with dedicated support teams in each location."
         tag="Service Map"
         tagIcon={MapPin}
         textboxLayout="split"
@@ -120,8 +120,8 @@ export default function LandingPage() {
         animationType="blur-reveal"
         features={[
           { 
-            title: "Pacific Northwest Region", 
-            description: "Extensive service network across British Columbia's core regions, including Lower Mainland, Fraser Valley, and Vancouver Island.", 
+            title: "High-Fidelity Service Map", 
+            description: "Isometric view of Southwestern BC, featuring dashed navy service boundaries and strategic pinpoints for Vancouver, Whistler, Chilliwack, and Victoria.", 
             bentoComponent: 'map'
           }
         ]}
