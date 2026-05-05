@@ -103,7 +103,7 @@ export default function LandingPage() {
         textboxLayout="split"
         useInvertedBackground={true}
         features={[
-            { title: "System Inspection", description: "Detailed assessment of existing lines to identify failure points.", imageSrc: "http://img.b2bpic.net/free-photo/plumbing-professional-doing-his-job_23-2150721566.jpg?_wi=2" },
+            { title: "System Inspection", description: "Detailed assessment of existing lines to identify failure points.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DFNQcAL7fna2gB5gMFYdjyolng/uploaded-1777946430500-rci7feex.jpg" },
             { title: "Precision PEX Installation", description: "Safe, code-compliant PEX installation ensuring zero leaks and superior water flow.", imageSrc: "http://img.b2bpic.net/free-photo/plumbing-professional-doing-his-job_23-2150721526.jpg?_wi=2" },
         ]}
       />
