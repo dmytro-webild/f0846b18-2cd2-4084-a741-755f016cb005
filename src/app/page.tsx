@@ -115,10 +115,10 @@ export default function LandingPage() {
         textboxLayout="split"
         useInvertedBackground={false}
         features={[
-          { title: "Metro Vancouver", description: "Full residential and commercial coverage throughout the metropolitan area." },
-          { title: "Fraser Valley", description: "Dedicated local service for Abbotsford, Chilliwack, and surrounding areas." },
-          { title: "Vancouver Island", description: "Specialized project support reaching Victoria and beyond." },
-          { title: "Corridor Coverage", description: "Seamless service routes from Whistler to the southern interior borders." }
+          { title: "Metro Vancouver", description: "Full residential and commercial coverage throughout the metropolitan area.", imageSrc: "http://img.b2bpic.net/free-photo/city-skyline-view_23-2149363529.jpg" },
+          { title: "Fraser Valley", description: "Dedicated local service for Abbotsford, Chilliwack, and surrounding areas.", imageSrc: "http://img.b2bpic.net/free-photo/field-mountains-sunset_23-2148906001.jpg" },
+          { title: "Vancouver Island", description: "Specialized project support reaching Victoria and beyond.", imageSrc: "http://img.b2bpic.net/free-photo/ocean-coast-view_23-2148974574.jpg" },
+          { title: "Corridor Coverage", description: "Seamless service routes from Whistler to the southern interior borders.", imageSrc: "http://img.b2bpic.net/free-photo/mountain-road-scenery_23-2148813735.jpg" }
         ]}
       />
   </div>
