@@ -8,10 +8,10 @@ import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloating
 import TestimonialAboutCard from '@/components/sections/about/TestimonialAboutCard';
 import FeatureCardThree from '@/components/sections/feature/featureCardThree/FeatureCardThree';
 import FeatureCardEight from '@/components/sections/feature/FeatureCardEight';
-import FeatureBento from '@/components/sections/feature/FeatureBento';
+import CardStack from '@/components/cardStack/CardStack';
 import MetricCardSeven from '@/components/sections/metrics/MetricCardSeven';
 import ContactCTA from '@/components/sections/contact/ContactCTA';
-import { Shield, Zap, Phone, Wrench, MapPin, Mail } from "lucide-react";
+import { Shield, Zap, Wrench, MapPin, Mail, Navigation } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -110,25 +110,29 @@ export default function LandingPage() {
   </div>
 
   <div id="area" data-section="area">
-      <FeatureBento 
-        title="Regional Coverage"
-        description="We proudly provide professional plumbing and gas services throughout British Columbia, covering the Lower Mainland, Fraser Valley, and Vancouver Island regions."
-        tag="Service Map"
+      <CardStack
+        title="Our Service Areas"
+        description="Dedicated coverage across the region."
+        tag="Coverage"
         tagIcon={MapPin}
         textboxLayout="split"
-        useInvertedBackground={false}
+        gridVariant="three-columns-all-equal-width"
         animationType="blur-reveal"
-        className="bg-white"
-        containerClassName="max-w-7xl mx-auto px-6 py-20"
-        cardClassName="shadow-none border-none bg-white p-0"
-        features={[
-          { 
-            title: "Service Territory", 
-            description: "BC Core Service Network: Serving Whistler, Metro Vancouver, Chilliwack, Nanaimo, and Victoria.", 
-            bentoComponent: 'map'
-          }
-        ]}
-      />
+        className="bg-slate-50"
+      >
+        <div className="p-6 rounded-xl border bg-white">
+            <h3 className="text-xl font-bold mb-2">Metro Vancouver</h3>
+            <p className="text-sm opacity-80">Serving the entire Lower Mainland with rapid response.</p>
+        </div>
+        <div className="p-6 rounded-xl border bg-white">
+            <h3 className="text-xl font-bold mb-2">Fraser Valley</h3>
+            <p className="text-sm opacity-80">Providing expert support to Chilliwack and surrounding areas.</p>
+        </div>
+        <div className="p-6 rounded-xl border bg-white">
+            <h3 className="text-xl font-bold mb-2">Vancouver Island</h3>
+            <p className="text-sm opacity-80">Comprehensive plumbing service in Nanaimo and Victoria.</p>
+        </div>
+      </CardStack>
   </div>
 
   <div id="trust" data-section="trust">
