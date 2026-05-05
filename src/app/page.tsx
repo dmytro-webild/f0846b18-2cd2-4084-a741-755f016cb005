@@ -58,6 +58,8 @@ export default function LandingPage() {
       imageAlt="Plumbing professional"
       mediaAnimation="slide-up"
       imagePosition="right"
+      mediaWrapperClassName="flex-1 w-full max-w-3xl"
+      fixedMediaHeight={false}
     />
   </div>
 
