@@ -83,7 +83,7 @@ export default function LandingPage() {
       gridVariant="three-columns-all-equal-width"
       useInvertedBackground={false}
       features={[
-        { title: "Plumbing & Heating", description: "Complete home piping, boiler service, water heaters, and hydronic heating systems.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DFNQcAL7fna2gB5gMFYdjyolng/uploaded-1777946998738-5df8w8ug.png" },
+        { title: "Plumbing & Heating", description: "Complete home piping, boiler service, water heaters, and hydronic heating systems.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DFNQcAL7fna2gB5gMFYdjyolng/uploaded-1777946998738-5df8w8ug.png?_wi=1" },
         { title: "Appliance Installation", description: "Specialized support for Bosch, Miele, LG, Samsung, and Sub-Zero kitchen and laundry appliances.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DFNQcAL7fna2gB5gMFYdjyolng/uploaded-1777947144208-logmxtv7.png?_wi=1" },
         { title: "Emergency & Drain Service", description: "24/7 reliable response for burst pipes, sewer backups, and urgent leaks. Minimal disruption to your home.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DFNQcAL7fna2gB5gMFYdjyolng/uploaded-1777947144208-logmxtv7.png?_wi=2" },
       ]}
@@ -118,7 +118,7 @@ export default function LandingPage() {
         tag="Coverage"
         tagIcon={MapPin}
         features={[
-          { id: "1", title: "Metro Vancouver", descriptions: ["Full Lower Mainland coverage with 24/7 emergency response availability."], imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DFNQcAL7fna2gB5gMFYdjyolng/uploaded-1777946998738-5df8w8ug.png" },
+          { id: "1", title: "Metro Vancouver", descriptions: ["Full Lower Mainland coverage with 24/7 emergency response availability."], imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DFNQcAL7fna2gB5gMFYdjyolng/uploaded-1777946998738-5df8w8ug.png?_wi=2" },
           { id: "2", title: "Fraser Valley", descriptions: ["Reliable plumbing and heating services from Langley to Chilliwack."], imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DFNQcAL7fna2gB5gMFYdjyolng/uploaded-1777947144208-logmxtv7.png?_wi=1" },
           { id: "3", title: "Vancouver Island", descriptions: ["Premium technical service for Nanaimo, Victoria, and adjacent island regions."], imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DFNQcAL7fna2gB5gMFYdjyolng/uploaded-1777947144208-logmxtv7.png?_wi=2" }
         ]}
