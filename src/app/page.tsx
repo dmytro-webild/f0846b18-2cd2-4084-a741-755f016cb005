@@ -39,7 +39,7 @@ export default function LandingPage() {
         { name: "Trust", id: "trust" },
         { name: "Contact", id: "contact" },
       ]}
-      brandName="Simon Plumbing"
+      brandName="Simon Appliance & Plumbing Ltd"
       logoClassName="w-48 h-auto scale-150"
       button={{ text: "Get Quote", href: "#contact" }}
     />
