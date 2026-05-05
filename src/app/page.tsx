@@ -54,7 +54,7 @@ export default function LandingPage() {
         { text: "Urgent Service", href: "tel:+17783177711" },
         { text: "Request a Quote", href: "#contact" },
       ]}
-      imageSrc="http://img.b2bpic.net/free-photo/plumbing-professional-doing-his-job_23-2150721526.jpg?_wi=1"
+      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DFNQcAL7fna2gB5gMFYdjyolng/uploaded-1777945844879-cwk0mgla.png"
       imageAlt="Plumbing professional"
       mediaAnimation="slide-up"
       imagePosition="right"
