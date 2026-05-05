@@ -7,10 +7,10 @@ import FeatureCardThree from '@/components/sections/feature/featureCardThree/Fea
 import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
 import HeroBillboardGallery from '@/components/sections/hero/HeroBillboardGallery';
 import MetricCardSeven from '@/components/sections/metrics/MetricCardSeven';
-import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
+import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
 import TestimonialAboutCard from '@/components/sections/about/TestimonialAboutCard';
 import FeatureCardEight from '@/components/sections/feature/FeatureCardEight';
-import { Shield, Zap, Phone, CheckCircle, MapPin, Wrench, Flame, Sparkles } from "lucide-react";
+import { Shield, Zap, Phone, Wrench, MapPin } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -28,7 +28,7 @@ export default function LandingPage() {
     >
       <ReactLenis root>
   <div id="nav" data-section="nav">
-      <NavbarLayoutFloatingOverlay
+      <NavbarLayoutFloatingInline
       navItems={[
         { name: "Home", id: "hero" },
         { name: "About", id: "about" },
@@ -39,6 +39,7 @@ export default function LandingPage() {
         { name: "Contact", id: "contact" },
       ]}
       brandName="Simon Plumbing"
+      logoClassName="w-48 h-auto scale-150"
     />
   </div>
 
