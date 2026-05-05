@@ -134,7 +134,7 @@ export default function LandingPage() {
       textboxLayout="split"
       useInvertedBackground={false}
       metrics={[
-        { id: "1", value: "100%", title: "Meticulous Craftsmanship", items: ["Quiet approach", "Methodical problem solving", "Complex system focus"] },
+        { id: "1", value: "100%", title: "Projects Completed Right the First Time", items: ["Quiet approach", "Methodical problem solving", "Complex system focus"] },
         { id: "2", value: "Daily", title: "Transparent Communication", items: ["Explain the why", "Done right first time", "Full documentation"] },
         { id: "3", value: "BC", title: "Reliability Across Province", items: ["Whistler to Victoria", "Fraser Valley", "Lower Mainland"] },
       ]}
