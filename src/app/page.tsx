@@ -85,7 +85,7 @@ export default function LandingPage() {
       features={[
         { title: "Plumbing & Heating", description: "Complete home piping, boiler service, water heaters, and hydronic heating systems.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DFNQcAL7fna2gB5gMFYdjyolng/uploaded-1777946998738-5df8w8ug.png" },
         { title: "Appliance Installation", description: "Specialized support for Bosch, Miele, LG, Samsung, and Sub-Zero kitchen and laundry appliances.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DFNQcAL7fna2gB5gMFYdjyolng/uploaded-1777947144208-logmxtv7.png" },
-        { title: " Emergency & Drain Service ", description: "24/7 reliable response for burst pipes, sewer backups, and urgent leaks. Minimal disruption to your home." },
+        { title: "Emergency & Drain Service", description: "24/7 reliable response for burst pipes, sewer backups, and urgent leaks. Minimal disruption to your home.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DFNQcAL7fna2gB5gMFYdjyolng/uploaded-1777947144208-logmxtv7.png" },
       ]}
       title="Our Core Services"
       description="From expert appliance integrations to complex home renovations, we provide comprehensive technical services tailored to your project."
