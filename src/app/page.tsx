@@ -5,7 +5,7 @@ import ReactLenis from "lenis/react";
 import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FeatureCardThree from '@/components/sections/feature/featureCardThree/FeatureCardThree';
 import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
-import HeroBillboardGallery from '@/components/sections/hero/HeroBillboardGallery';
+import HeroSplit from '@/components/sections/hero/HeroSplit';
 import MetricCardSeven from '@/components/sections/metrics/MetricCardSeven';
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
 import TestimonialAboutCard from '@/components/sections/about/TestimonialAboutCard';
@@ -46,7 +46,7 @@ export default function LandingPage() {
   </div>
 
   <div id="hero" data-section="hero">
-      <HeroBillboardGallery
+      <HeroSplit
       background={{ variant: "gradient-bars" }}
       title="Precision Plumbing. Professional Integrity."
       description="Licensed Red Seal experts serving Metro Vancouver to Vancouver Island. We deliver flawless technical solutions with a commitment to protecting your home and your peace of mind."
@@ -54,12 +54,10 @@ export default function LandingPage() {
         { text: "Urgent Service", href: "tel:+17783177711" },
         { text: "Request a Quote", href: "#contact" },
       ]}
-      mediaItems={[
-        { imageSrc: "http://img.b2bpic.net/free-photo/plumbing-professional-doing-his-job_23-2150721526.jpg?_wi=1", imageAlt: "Plumbing professional" },
-        { imageSrc: "http://img.b2bpic.net/free-photo/man-looks-faucet-pipes-valve-pressure-meter_169016-14812.jpg", imageAlt: "Pipe repair" },
-        { imageSrc: "http://img.b2bpic.net/free-photo/mechanics-repairing-car-workshop_329181-11837.jpg", imageAlt: "Appliance service" },
-      ]}
+      imageSrc="http://img.b2bpic.net/free-photo/plumbing-professional-doing-his-job_23-2150721526.jpg?_wi=1"
+      imageAlt="Plumbing professional"
       mediaAnimation="slide-up"
+      imagePosition="right"
     />
   </div>
 
