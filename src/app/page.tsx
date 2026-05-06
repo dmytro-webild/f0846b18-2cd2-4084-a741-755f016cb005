@@ -14,20 +14,6 @@ import ContactCTA from '@/components/sections/contact/ContactCTA';
 import { Shield, Zap, Wrench, MapPin } from "lucide-react";
 
 export default function LandingPage() {
-  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement> | React.MouseEvent<HTMLButtonElement>, href: string) => {
-    if (href.startsWith('tel:') || href.startsWith('mailto:')) {
-      window.location.href = href;
-      return;
-    }
-    if (href.startsWith('#')) {
-      e.preventDefault();
-      const target = document.querySelector(href);
-      if (target) {
-        target.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
-  };
-
   return (
     <ThemeProvider
         defaultButtonVariant="icon-arrow"
@@ -169,10 +155,7 @@ export default function LandingPage() {
         description="Call or email us for emergency services or to schedule your project estimate."
         buttons={[
             { text: "Call +1 778-317-7711", onClick: () => window.location.href = 'tel:+17783177711' },
-            { text: "Email for Quote", onClick: () => {
-              const el = document.querySelector('#contact');
-              if (el) el.scrollIntoView({ behavior: 'smooth' });
-            } }
+            { text: "Email for Quote", onClick: () => window.location.href = 'mailto:778simonteam@gmail.com' }
         ]}
         background={{ variant: "plain" }}
         useInvertedBackground={false}
