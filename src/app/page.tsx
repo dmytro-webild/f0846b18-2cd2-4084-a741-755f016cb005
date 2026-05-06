@@ -118,7 +118,7 @@ export default function LandingPage() {
         tag="Coverage"
         tagIcon={MapPin}
         features={[
-          { id: "1", title: "Metro Vancouver", descriptions: ["Full Lower Mainland coverage with 24/7 emergency response availability."], imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DFNQcAL7fna2gB5gMFYdjyolng/uploaded-1777951481616-49u5ppoa.png" },
+          { id: "1", title: "Metro Vancouver", descriptions: ["Full Lower Mainland coverage with 24/7 emergency response availability."], imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DFNQcAL7fna2gB5gMFYdjyolng/uploaded-1778034451287-y6pf4jyq.png" },
           { id: "2", title: "Fraser Valley", descriptions: ["Reliable plumbing and heating services from Langley to Chilliwack."], imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DFNQcAL7fna2gB5gMFYdjyolng/uploaded-1777947144208-logmxtv7.png?_wi=1" },
           { id: "3", title: "Vancouver Island", descriptions: ["Premium technical service for Nanaimo, Victoria, and adjacent island regions."], imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DFNQcAL7fna2gB5gMFYdjyolng/uploaded-1777947144208-logmxtv7.png?_wi=2" }
         ]}
