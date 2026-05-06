@@ -55,7 +55,10 @@ export default function LandingPage() {
       ]}
       brandName="Simon Plumbing "
       logoClassName="w-48 h-auto scale-150"
-      button={{ text: "Get Quote", onClick: (e) => handleSmoothScroll(e, '#contact') }}
+      button={{ text: "Get Quote", onClick: () => {
+        const el = document.querySelector('#contact');
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+      } }}
     />
   </div>
 
@@ -66,7 +69,10 @@ export default function LandingPage() {
       description="Licensed Red Seal experts serving Metro Vancouver to Vancouver Island. We deliver flawless technical solutions with a commitment to protecting your home and your peace of mind."
       buttons={[
         { text: "Urgent Service", onClick: () => window.location.href = 'tel:+17783177711' },
-        { text: "Request a Quote", onClick: (e) => handleSmoothScroll(e, '#contact') },
+        { text: "Request a Quote", onClick: () => {
+          const el = document.querySelector('#contact');
+          if (el) el.scrollIntoView({ behavior: 'smooth' });
+        } },
       ]}
       imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DFNQcAL7fna2gB5gMFYdjyolng/uploaded-1777945844879-cwk0mgla.png"
       imageAlt="Plumbing professional"
@@ -163,7 +169,10 @@ export default function LandingPage() {
         description="Call or email us for emergency services or to schedule your project estimate."
         buttons={[
             { text: "Call +1 778-317-7711", onClick: () => window.location.href = 'tel:+17783177711' },
-            { text: "Email for Quote", onClick: (e) => handleSmoothScroll(e, '#contact') }
+            { text: "Email for Quote", onClick: () => {
+              const el = document.querySelector('#contact');
+              if (el) el.scrollIntoView({ behavior: 'smooth' });
+            } }
         ]}
         background={{ variant: "plain" }}
         useInvertedBackground={false}
