@@ -104,7 +104,7 @@ export default function LandingPage() {
         useInvertedBackground={true}
         features={[
             { title: "System Inspection", description: "Detailed assessment of existing lines to identify failure points.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DFNQcAL7fna2gB5gMFYdjyolng/uploaded-1777946430500-rci7feex.jpg" },
-            { title: "Precision PEX Installation", description: "Safe, code-compliant PEX installation ensuring zero leaks and superior water flow.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DFNQcAL7fna2gB5gMFYdjyolng/uploaded-1778034053452-dygvaeyn.jpg" },
+            { title: "Precision PEX Installation", description: "Safe, code-compliant PEX installation ensuring zero leaks and superior water flow.", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DFNQcAL7fna2gB5gMFYdjyolng/uploaded-1778034127155-bxpn04jd.jpg" },
         ]}
       />
   </div>
