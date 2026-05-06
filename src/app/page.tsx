@@ -55,7 +55,7 @@ export default function LandingPage() {
       ]}
       brandName="Simon Plumbing "
       logoClassName="w-48 h-auto scale-150"
-      button={{ text: "Get Quote", onClick: (e) => handleSmoothScroll(e as any, '#contact') }}
+      button={{ text: "Get Quote", onClick: (e) => handleSmoothScroll(e, '#contact') }}
     />
   </div>
 
@@ -66,7 +66,7 @@ export default function LandingPage() {
       description="Licensed Red Seal experts serving Metro Vancouver to Vancouver Island. We deliver flawless technical solutions with a commitment to protecting your home and your peace of mind."
       buttons={[
         { text: "Urgent Service", onClick: () => window.location.href = 'tel:+17783177711' },
-        { text: "Request a Quote", onClick: (e) => handleSmoothScroll(e as any, '#contact') },
+        { text: "Request a Quote", onClick: (e) => handleSmoothScroll(e, '#contact') },
       ]}
       imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DFNQcAL7fna2gB5gMFYdjyolng/uploaded-1777945844879-cwk0mgla.png"
       imageAlt="Plumbing professional"
