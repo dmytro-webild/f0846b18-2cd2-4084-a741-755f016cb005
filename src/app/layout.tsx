@@ -10,8 +10,8 @@ import { Inter_Tight } from "next/font/google";
 
 
 export const metadata: Metadata = {
-  title: 'Simon Appliance and Plumbing Ltd. | Red Seal Experts',
-  description: 'Professional Red Seal plumbing and gas fitting services serving Metro Vancouver, Fraser Valley, Whistler, and Vancouver Island.',
+  title: "Simon Appliance and Plumbing Ltd. | Red Seal Experts",
+  description: "Professional Red Seal plumbing and gas fitting services serving Metro Vancouver, Fraser Valley, Whistler, and Vancouver Island.",
   openGraph: {
     "title": "Simon Appliance and Plumbing",
     "siteName": "Simon Appliance and Plumbing Ltd.",
