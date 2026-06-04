@@ -4,7 +4,6 @@ import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
 import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
-import Tag from '@/components/tag/Tag';
 
 export default function PricingListPage() {
   return (
@@ -40,7 +39,7 @@ export default function PricingListPage() {
         </div>
 
         <div id="pricing-list-content" data-section="pricing-list-content" className="relative z-10 flex flex-col items-center justify-center pt-20 sm:pt-24 md:pt-32 lg:pt-40 mx-auto w-full text-center px-4 md:px-6 lg:px-8">
-          <Tag text="Our Rates" className="mb-3" />
+          <span className="inline-flex items-center rounded-full bg-blue-50 px-2.5 py-0.5 text-xs font-medium text-blue-800 mb-3">Our Rates</span>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-normal text-foreground max-w-2xl mb-4">
             Installation Price List
           </h2>
