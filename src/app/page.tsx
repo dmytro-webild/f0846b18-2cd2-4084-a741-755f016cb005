@@ -37,8 +37,8 @@ export default function LandingPage() {
         { name: "Poly-B Replacement", id: "poly-b" },
         { name: "Service Area", id: "area" },
         { name: "Trust", id: "trust" },
-        { name: "Installation Price List", href: "/pricing-list" },
-        { name: "Contact", id: "contact" },
+        { name: "Installation Price List", id: "/pricing-list" },
+        { name: "Contact", id: "contact" }
       ]}
       brandName="Simon Plumbing "
       logoClassName="w-48 h-auto scale-150"
@@ -170,7 +170,7 @@ export default function LandingPage() {
       columns={[
         { title: "Contact", items: [{ label: "+1 778-317-7711", href: "tel:+17783177711" }, { label: "Email Office", href: "mailto:778simonteam@gmail.com" }] },
         { title: "Services", items: [{ label: "Plumbing", href: "#services" }, { label: "Gas Fitting", href: "#services" }, { label: "Appliance Installation", href: "#services" }, { label: "Installation Price List", href: "/pricing-list" }] },
-        { title: "Policy", items: [{ label: "Privacy Policy", href: "#" }, { label: "Terms of Service", href: "#" }] },
+        { title: "Policy", items: [{ label: "Privacy Policy", href: "#" }, { label: "Terms of Service", href: "#" }] }
       ]}
       copyrightText="© 2024 Simon Appliance and Plumbing Ltd. All rights reserved."
     />
