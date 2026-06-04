@@ -49,24 +49,31 @@ export default function PricingListPage() {
             tag="Our Rates"
             plans={[
               {
-                id: "basic",                badge: "Basic Fixture",                badgeIcon: CheckCircle,
-                price: "$150 - $300",                subtitle: "Simple installations for standard fixtures. Starting from.",                buttons: [{ text: "Request Quote", href: "/#contact" }],
+                id: "drain-cleaning",                badge: "Drain Cleaning",                badgeIcon: CheckCircle,
+                price: "$180 - $350",                subtitle: "For clogged sinks, showers, or main lines. Diagnostic included.",                buttons: [{ text: "Book Now", href: "/#contact" }],
                 features: [
-                  "Standard Faucet Installation",                  "Toilet Replacement (supply only, excluding toilet cost)",                  "Dishwasher Connection (existing lines)",                  "Outdoor Hose Bib Replacement"
+                  "Standard Drain Snaking",                  "Hydro Jetting (additional cost)",                  "Camera Inspection (if needed)",                  "Emergency Unclogging"
                 ]
               },
               {
-                id: "standard",                badge: "Advanced Installation",                badgeIcon: CheckCircle,
-                price: "$300 - $600",                subtitle: "Complex installations requiring specialized skills. Starting from.",                buttons: [{ text: "Request Quote", href: "/#contact" }],
+                id: "water-heater",                badge: "Water Heater Service",                badgeIcon: CheckCircle,
+                price: "$400 - $1200",                subtitle: "Installation, repair, or replacement of water heaters.",                buttons: [{ text: "Get a Quote", href: "/#contact" }],
                 features: [
-                  "Water Heater Replacement (tank type, like-for-like)",                  "Garburator Installation",                  "Shower Valve Upgrade (accessible, like-for-like)",                  "Laundry Sink Installation"
+                  "Standard Tank Water Heater Replacement",                  "Tankless Water Heater Installation (basic)",                  "Water Heater Diagnostics & Repair",                  "Expansion Tank Installation"
                 ]
               },
               {
-                id: "premium",                badge: "Renovation Projects",                badgeIcon: CheckCircle,
-                price: "Custom Quote",                subtitle: "Comprehensive plumbing for renovations and new builds.",                buttons: [{ text: "Request Quote", href: "/#contact" }],
+                id: "fixture-installation",                badge: "Fixture & Appliance",                badgeIcon: CheckCircle,
+                price: "$250 - $750",                subtitle: "Installation for faucets, toilets, and major appliances.",                buttons: [{ text: "Request Service", href: "/#contact" }],
                 features: [
-                  "Full Bathroom Rough-in",                  "Full Kitchen Rough-in",                  "New Construction Plumbing",                  "Drainage System Overhaul",                  "On-Demand Water Heater Installation"
+                  "New Faucet Installation",                  "Toilet Installation (new or replacement)",                  "Dishwasher Installation (with new hookups)",                  "Washing Machine Hookup"
+                ]
+              },
+              {
+                id: "pipe-repair",                badge: "Pipe Repair & Leak Detection",                badgeIcon: CheckCircle,
+                price: "$200 - $800+",                subtitle: "Fixing leaks, burst pipes, and minor re-piping.",                buttons: [{ text: "Emergency Service", onClick: () => window.location.href = 'tel:+17783177711' }],
+                features: [
+                  "Leak Detection & Repair",                  "Pipe Section Replacement",                  "Slab Leak Repair (visible access)",                  "Pinhole Leak Fix"
                 ]
               }
             ]}
