@@ -31,21 +31,18 @@ export default function LandingPage() {
   <div id="nav" data-section="nav">
       <NavbarLayoutFloatingInline
       navItems={[
-        { name: "Home", id: "hero" },
-        { name: "About", id: "about" },
-        { name: "Services", id: "services" },
-        { name: "Poly-B Replacement", id: "poly-b" },
-        { name: "Service Area", id: "area" },
-        { name: "Trust", id: "trust" },
+        { name: "Home", id: "/" },
+        { name: "About", id: "/#about" },
+        { name: "Services", id: "/#services" },
+        { name: "Poly-B Replacement", id: "/#poly-b" },
+        { name: "Service Area", id: "/#area" },
+        { name: "Trust", id: "/#trust" },
         { name: "Installation Price List", id: "/pricing-list" },
-        { name: "Contact", id: "contact" }
+        { name: "Contact", id: "/#contact" }
       ]}
       brandName="Simon Plumbing "
       logoClassName="w-48 h-auto scale-150"
-      button={{ text: "Get Quote", onClick: () => {
-        const el = document.querySelector('#contact');
-        if (el) el.scrollIntoView({ behavior: 'smooth' });
-      } }}
+      button={{ text: "Get Quote", href: "/#contact" }}
     />
   </div>
 
@@ -56,10 +53,7 @@ export default function LandingPage() {
       description="Licensed Red Seal experts serving Metro Vancouver to Vancouver Island. We deliver flawless technical solutions with a commitment to protecting your home and your peace of mind."
       buttons={[
         { text: "Urgent Service", onClick: () => window.location.href = 'tel:+17783177711' },
-        { text: "Request a Quote", onClick: () => {
-          const el = document.querySelector('#contact');
-          if (el) el.scrollIntoView({ behavior: 'smooth' });
-        } },
+        { text: "Request a Quote", href: "/#contact" },
       ]}
       imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DFNQcAL7fna2gB5gMFYdjyolng/uploaded-1777945844879-cwk0mgla.png"
       imageAlt="Plumbing professional"
@@ -169,7 +163,7 @@ export default function LandingPage() {
       logoText="Simon Appliance and Plumbing Ltd."
       columns={[
         { title: "Contact", items: [{ label: "+1 778-317-7711", href: "tel:+17783177711" }, { label: "Email Office", href: "mailto:778simonteam@gmail.com" }] },
-        { title: "Services", items: [{ label: "Plumbing", href: "#services" }, { label: "Gas Fitting", href: "#services" }, { label: "Appliance Installation", href: "#services" }, { label: "Installation Price List", href: "/pricing-list" }] },
+        { title: "Services", items: [{ label: "Plumbing", href: "/#services" }, { label: "Gas Fitting", href: "/#services" }, { label: "Appliance Installation", href: "/#services" }, { label: "Installation Price List", href: "/pricing-list" }] },
         { title: "Policy", items: [{ label: "Privacy Policy", href: "#" }, { label: "Terms of Service", href: "#" }] }
       ]}
       copyrightText="© 2024 Simon Appliance and Plumbing Ltd. All rights reserved."
