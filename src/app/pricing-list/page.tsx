@@ -111,7 +111,7 @@ export default function PricingListPage() {
               { name: "Poly-B Replacement", id: "poly-b" },
               { name: "Service Area", id: "area" },
               { name: "Trust", id: "trust" },
-              { name: "Installation Price List", href: "/pricing-list" },
+              { name: "Installation Price List", id: "/pricing-list" },
               { name: "Contact", id: "contact" }
             ]}
             brandName="Simon Plumbing "
