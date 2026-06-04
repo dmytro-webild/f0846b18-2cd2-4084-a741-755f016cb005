@@ -4,8 +4,7 @@ import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
 import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
-import PricingCardEight from '@/components/sections/pricing/PricingCardEight';
-import { CheckCircle } from 'lucide-react';
+import Tag from '@/components/tag/Tag';
 
 export default function PricingListPage() {
   return (
@@ -40,45 +39,21 @@ export default function PricingListPage() {
           />
         </div>
 
-        <div id="pricing-list-content" data-section="pricing-list-content">
-          <PricingCardEight
-            animationType="slide-up"
-            textboxLayout="default"
-            title="Installation Price List"
-            description="Transparent pricing for common plumbing installations and services in Metro Vancouver and surrounding areas. For custom projects or specific inquiries, please request a personalized quote."
-            tag="Our Rates"
-            plans={[
-              {
-                id: "drain-cleaning",                badge: "Drain Cleaning",                badgeIcon: CheckCircle,
-                price: "$180 - $350",                subtitle: "For clogged sinks, showers, or main lines. Diagnostic included.",                buttons: [{ text: "Book Now", href: "/#contact" }],
-                features: [
-                  "Standard Drain Snaking",                  "Hydro Jetting (additional cost)",                  "Camera Inspection (if needed)",                  "Emergency Unclogging"
-                ]
-              },
-              {
-                id: "water-heater",                badge: "Water Heater Service",                badgeIcon: CheckCircle,
-                price: "$400 - $1200",                subtitle: "Installation, repair, or replacement of water heaters.",                buttons: [{ text: "Get a Quote", href: "/#contact" }],
-                features: [
-                  "Standard Tank Water Heater Replacement",                  "Tankless Water Heater Installation (basic)",                  "Water Heater Diagnostics & Repair",                  "Expansion Tank Installation"
-                ]
-              },
-              {
-                id: "fixture-installation",                badge: "Fixture & Appliance",                badgeIcon: CheckCircle,
-                price: "$250 - $750",                subtitle: "Installation for faucets, toilets, and major appliances.",                buttons: [{ text: "Request Service", href: "/#contact" }],
-                features: [
-                  "New Faucet Installation",                  "Toilet Installation (new or replacement)",                  "Dishwasher Installation (with new hookups)",                  "Washing Machine Hookup"
-                ]
-              },
-              {
-                id: "pipe-repair",                badge: "Pipe Repair & Leak Detection",                badgeIcon: CheckCircle,
-                price: "$200 - $800+",                subtitle: "Fixing leaks, burst pipes, and minor re-piping.",                buttons: [{ text: "Emergency Service", onClick: () => window.location.href = 'tel:+17783177711' }],
-                features: [
-                  "Leak Detection & Repair",                  "Pipe Section Replacement",                  "Slab Leak Repair (visible access)",                  "Pinhole Leak Fix"
-                ]
-              }
-            ]}
-            useInvertedBackground={false}
-          />
+        <div id="pricing-list-content" data-section="pricing-list-content" className="relative z-10 flex flex-col items-center justify-center pt-20 sm:pt-24 md:pt-32 lg:pt-40 mx-auto w-full text-center px-4 md:px-6 lg:px-8">
+          <Tag text="Our Rates" className="mb-3" />
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-normal text-foreground max-w-2xl mb-4">
+            Installation Price List
+          </h2>
+          <p className="text-lg md:text-xl text-foreground/70 max-w-3xl mb-12">
+            Transparent pricing for common plumbing installations and services in Metro Vancouver and surrounding areas. For custom projects or specific inquiries, please request a personalized quote.
+          </p>
+          <div className="w-full flex justify-center">
+            <img
+              src="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DFNQcAL7fna2gB5gMFYdjyolng/uploaded-1778103986846-pricelistsample.jpg" 
+              alt="Sample Appliance Installation Price List"
+              className="w-full max-w-[900px] h-auto object-contain rounded-lg shadow-lg"
+            />
+          </div>
         </div>
 
         <div id="footer" data-section="footer">
