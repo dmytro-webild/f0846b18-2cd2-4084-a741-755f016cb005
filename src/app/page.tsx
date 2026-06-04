@@ -52,9 +52,8 @@ export default function LandingPage() {
       title="Precision Plumbing. Professional Integrity."
       description="Licensed Red Seal experts serving Metro Vancouver to Vancouver Island. We deliver flawless technical solutions with a commitment to protecting your home and your peace of mind."
       buttons={[
-        { text: "Urgent Service", onClick: () => window.location.href = 'tel:+17783177711' },
-        { text: "Request a Quote", href: "/#contact" },
-        { text: "View Price List", href: "/pricing-list" }
+        { text: "View Price List", href: "/pricing-list" },
+        { text: "Request a Quote", href: "/#contact" }
       ]}
       imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DFNQcAL7fna2gB5gMFYdjyolng/uploaded-1777945844879-cwk0mgla.png"
       imageAlt="Plumbing professional"
