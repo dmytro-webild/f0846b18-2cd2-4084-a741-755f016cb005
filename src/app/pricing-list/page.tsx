@@ -48,7 +48,7 @@ export default function PricingListPage() {
           </p>
           <div className="w-full flex justify-center">
             <img
-              src="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DFNQcAL7fna2gB5gMFYdjyolng/uploaded-1778103986846-pricelistsample.jpg" 
+              src="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DFNQcAL7fna2gB5gMFYdjyolng/uploaded-1780550052639-e1woubsa.png" 
               alt="Sample Appliance Installation Price List"
               className="w-full max-w-[900px] h-auto object-contain rounded-lg shadow-lg"
             />
