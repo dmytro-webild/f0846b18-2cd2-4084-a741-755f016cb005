@@ -9,11 +9,25 @@ jobs:
 
     steps:
       - name: Checkout
-        run: git clone --depth 1 --branch ${{ gitea.ref_name }} ${{ gitea.server_url }}/${{ gitea.repository }}.git . || exit 1
+        run: |
+          HOST="${{ gitea.server_url }}"; HOST="${HOST#https://}"; HOST="${HOST#http://}"
+          TOKEN="${{ github.token }}"
+          [ -z "$TOKEN" ] && TOKEN="${{ secrets.GITHUB_TOKEN }}"
+          if [ -z "$TOKEN" ]; then echo "::error::CI checkout has no auth token (github.token and secrets.GITHUB_TOKEN both empty)"; exit 1; fi
+          git clone --depth 1 --branch "${{ gitea.ref_name }}" "https://token:${TOKEN}@${HOST}/${{ gitea.repository }}.git" . || exit 1
 
       - name: Install dependencies
         run: |
-          if [ -d "/var/node_modules_cache/node_modules" ]; then
+          if [ -f "vite.config.ts" ]; then
+            if [ -d "/var/node_modules_cache_v4/node_modules" ]; then
+              ln -s /var/node_modules_cache_v4/node_modules ./node_modules
+            elif [ -f "pnpm-lock.yaml" ]; then
+              npm install -g pnpm --silent
+              pnpm install --frozen-lockfile
+            else
+              npm ci --prefer-offline --no-audit
+            fi
+          elif [ -d "/var/node_modules_cache/node_modules" ]; then
             ln -s /var/node_modules_cache/node_modules ./node_modules
           else
             npm ci --prefer-offline --no-audit
@@ -27,11 +41,3 @@ jobs:
       - name: ESLint check
         run: npm run lint 2>&1 | tee -a build.log
         timeout-minutes: 3
-
-      - name: Upload build log on failure
-        if: failure()
-        uses: actions/upload-artifact@v3
-        with:
-          name: build-log
-          path: build.log
-          retention-days: 1
